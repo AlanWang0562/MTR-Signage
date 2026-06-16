@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Dashboard</title>
+
+    <!-- Auto refresh every 5 minutes -->
+    <meta http-equiv="refresh" content="300">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Segoe UI, Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 1fr;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .header {
+            grid-column: span 2;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .card {
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .value {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Company Live Dashboard</div>
+
+        <div class="card">
+            <div class="title">Room Availability</div>
+            <div class="value">85%</div>
+        </div>
+
+        <div class="card">
+            <div class="title">Today’s Meetings</div>
+            <div class="value">42</div>
+        </div>
+
+        <div class="card">
+            <div class="title">Weather</div>
+            <div class="value">25°C ☀️</div>
+        </div>
+
+        <div class="card">
+            <div class="title">Announcements</div>
+            <div class="value">Townhall @ 3PM</div>
+        </div>
+    </div>
+</body>
+</html>
