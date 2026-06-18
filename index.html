@@ -3,6 +3,14 @@
 <head>
     <title>Company Dashboard</title>
 
+    <!-- ✅ CSP: allow Teams (MTR) to embed this page -->
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self' https: data: blob:;
+                   img-src 'self' https: data:;
+                   style-src 'self' 'unsafe-inline' https:;
+                   script-src 'self' 'unsafe-inline' https:;
+                   frame-ancestors 'self' https://teams.microsoft.com;">
+    
     <!-- Auto refresh every 5 minutes -->
     <meta http-equiv="refresh" content="300">
 
@@ -48,7 +56,7 @@
 
 <body>
     <div class="container">
-        <div class="header">Company Live Dashboard</div>
+        <div class="header">DSV Intranet</div>
 
         <div class="card">
             <div class="title">Room Availability</div>
